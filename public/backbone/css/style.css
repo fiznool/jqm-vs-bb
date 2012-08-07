@@ -241,6 +241,7 @@ td { vertical-align: top; }
   text-decoration: none;
 }
 
+.animal-list a,
 .animal-list a:visited {
   color: inherit;
 }
@@ -267,7 +268,7 @@ td { vertical-align: top; }
 }
 
 .animal-detail {
-  margin: 5px
+  margin: 5px;
 }
 
 .animal-detail h1 {
