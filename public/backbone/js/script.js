@@ -16,7 +16,7 @@
 
     return Backbone.View.extend({
 
-      className: 'detail',
+      className: 'animal-detail',
 
       template: _.template(
         '<img src="{{ img }}" />' +
@@ -50,7 +50,12 @@
 
         tagName: 'li',
 
-        template: _.template('<a href="#!/animals/{{ id }}">{{ name }}</a>'),
+        template: _.template(
+          '<a href="#!/animals/{{ id }}">' +
+            '<img src="{{ thumb }}" />' +
+            '<i class="chevron"></i>' +
+            '<div class="title">{{ name }}</div>' +
+          '</a>'),
 
         initialize: function(options) {
           this.model = new Model(options.data);
@@ -77,6 +82,7 @@
       return Backbone.View.extend({
 
         tagName: 'ul',
+        className: 'animal-list',
 
         collection: new Collection(),
 

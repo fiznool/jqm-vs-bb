@@ -204,6 +204,77 @@ td { vertical-align: top; }
    ========================================================================== */
 
 
+#main {
+  min-width: 320px;
+  max-width: 480px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #444;
+}
+
+.chevron {
+  background-image: url('../img/chevron.png');
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 12px;
+  display: inline-block;
+}
+
+.animal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.animal-list li {
+  width: 98%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin: 0 1%;
+  border-top: 1px solid #EFEFEF;
+}
+
+.animal-list a {
+  text-decoration: none;
+}
+
+.animal-list a:visited {
+  color: inherit;
+}
+
+.animal-list a:hover {
+  color: #afafaf;
+  text-decoration: none;
+}
+
+.animal-list img {
+  float: left;
+  margin-right: 10px;
+}
+
+.animal-list .title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 0;
+}
+
+.animal-list .chevron {
+  float: right;
+  margin-top: 17px;
+}
+
+.animal-detail {
+  margin: 5px
+}
+
+.animal-detail h1 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaa;
+}
+
 
 
 
