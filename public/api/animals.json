@@ -1,14 +1,17 @@
 [
   {
     "id": 1,
-    "name": "Lion"
+    "name": "Lion",
+    "thumb": "/api/img/lion-thumb.jpg"
   },
   {
     "id": 2,
-    "name": "Honey Badger"
+    "name": "Honey Badger",
+    "thumb": "/api/img/hippo-thumb.jpg"
   },
   {
     "id": 3,
-    "name": "Elephant"
+    "name": "Elephant",
+    "thumb": "/api/img/elephant-thumb.jpg"
   }
 ]
