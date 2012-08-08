@@ -5,6 +5,8 @@
     interpolate : /\{\{(.+?)\}\}/g
   };
 
+  var mediator = _.extend({}, Backbone.Events);
+
   // Animal Details page is a self-contained module
   var AnimalDetail = (function() {
 
@@ -31,6 +33,7 @@
 
       render: function() {
         this.$el.html(this.template(this.model.toJSON()));
+        mediator.trigger('header:update', this.model.get('name'));
       }
 
     });
@@ -92,6 +95,7 @@
         },
 
         render: function() {
+          mediator.trigger('header:update', "Choose your Weapon!");
           this.collection.each(this.addOne, this);
         },
 
@@ -156,6 +160,13 @@
 
   // Most stuff can happen before DOM is ready
   $(function() {
+    var $headerbarTitle = $('#app-header .title');
+
+    mediator.on('header:update', function(data) {
+      $headerbarTitle.html(data);
+    });
+
+  
     var router = new Router({
       $container: $('#main')
     });
